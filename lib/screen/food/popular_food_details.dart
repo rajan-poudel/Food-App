@@ -76,15 +76,24 @@ class _PopularFoodDetailsState extends State<PopularFoodDetails> {
                       text: "Introduce",
                       color: AppColors.titleColor,
                     ),
-                    ExpandableText(text: "text")
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Expanded(
+                      child: SingleChildScrollView(
+                          child: const ExpandableText(
+                              text:
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum")),
+                    ),
                   ],
                 )),
           ),
         ],
       ),
       bottomNavigationBar: Container(
-        height: 100,
-        padding: EdgeInsets.all(30),
+        height: 120,
+        padding: EdgeInsets.all(10),
+        // margin: EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: Colors.black12,
           // color: AppColors.buttonBackgroundColor,
@@ -97,10 +106,10 @@ class _PopularFoodDetailsState extends State<PopularFoodDetails> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              // padding:
-              //     EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-              height: 50,
-              width: 100,
+              padding:
+                  EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
+              // height: 50,
+              // width: 100,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20), color: Colors.white),
               child: Row(
@@ -125,15 +134,15 @@ class _PopularFoodDetailsState extends State<PopularFoodDetails> {
               ),
             ),
             Container(
-              // padding:
-              //     EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
-              height: 50,
-              width: 200,
+              padding:
+                  EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
+              // height: 50,
+              // width: 200,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: AppColors.mainBlackColor),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   BigText(
                     text: "\$565",

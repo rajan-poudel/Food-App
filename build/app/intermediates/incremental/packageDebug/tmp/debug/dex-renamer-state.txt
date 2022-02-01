@@ -1,4 +1,4 @@
-#Tue Feb 01 21:01:10 NPT 2022
+#Tue Feb 01 22:46:33 NPT 2022
 base.0=C\:\\Users\\HIMAL PAUDEL\\Documents\\Flutter Workspace\\food_delivery\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
