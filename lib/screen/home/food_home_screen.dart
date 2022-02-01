@@ -100,17 +100,54 @@ class _FoodHomeScreenState extends State<FoodHomeScreen> {
                               fit: BoxFit.cover),
                         ),
                       ),
-                      Container(
-                        height: 100,
-                        width: 200,
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Colors.white),
-                        child: Column(
-                          children: [
-                            BigText(text: "asdfghjkdCCCXVXCffhdsfhsjdkfskHF")
-                          ],
+                      Expanded(
+                        child: Container(
+                          height: 100,
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(20),
+                                  bottomRight: Radius.circular(20)),
+                              color: Colors.white),
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                BigText(
+                                  text: "Nutritious Fruit Meal in china",
+                                  color: Colors.black54,
+                                ),
+                                SmallText(text: "with ths"),
+                                SizedBox(
+                                  height: 5,
+                                ),
+                                Expanded(
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      TextIcon(
+                                        text: "Normal",
+                                        icon: Icons.circle_sharp,
+                                        iconColor: AppColors.iconColor1,
+                                      ),
+                                      TextIcon(
+                                        text: "1.7km",
+                                        icon: Icons.location_on_outlined,
+                                        iconColor: AppColors.mainColor,
+                                      ),
+                                      TextIcon(
+                                        text: "30 min",
+                                        icon: Icons.access_time,
+                                        iconColor: AppColors.iconColor2,
+                                      )
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
                         ),
                       )
                     ],

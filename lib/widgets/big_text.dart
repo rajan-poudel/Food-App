@@ -4,14 +4,14 @@ class BigText extends StatelessWidget {
   final String text;
   Color? color;
   double? size;
-  TextOverflow? overflow = TextOverflow.ellipsis;
+  TextOverflow? overflow;
 
   BigText(
       {Key? key,
       required this.text,
       this.color = const Color(0xFFccc7c5),
       this.size = 24,
-      this.overflow})
+      this.overflow = TextOverflow.ellipsis})
       : super(key: key);
 
   @override
