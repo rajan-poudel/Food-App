@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/utils/colors.dart';
+import 'package:food_delivery/widgets/app_column.dart';
 import 'package:food_delivery/widgets/big_text.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 import 'package:food_delivery/widgets/text_icon_widget.dart';
@@ -211,58 +212,10 @@ class _FoodHomeScreenState extends State<FoodHomeScreen> {
                     )
                   ]),
               child: Container(
-                margin: EdgeInsets.only(left: 20, top: 10, right: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    BigText(text: "Chinese Slide"),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Row(
-                      // mainAxisAlignment: MainAxisAlignment.start,
-                      // crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Wrap(
-                          children: List.generate(
-                              5,
-                              (index) => Icon(
-                                    Icons.star_border,
-                                    color: AppColors.iconColor1,
-                                  )),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        SmallText(text: "(5.0)")
-                      ],
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        TextIcon(
-                          text: "Normal",
-                          icon: Icons.circle_sharp,
-                          iconColor: AppColors.iconColor1,
-                        ),
-                        TextIcon(
-                          text: "1.7km",
-                          icon: Icons.location_on_outlined,
-                          iconColor: AppColors.mainColor,
-                        ),
-                        TextIcon(
-                          text: "30 min",
-                          icon: Icons.access_time,
-                          iconColor: AppColors.iconColor2,
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
+                  margin: EdgeInsets.only(left: 20, top: 10, right: 20),
+                  child: AppColumn(
+                    text: "Chineses Slide",
+                  )),
             ),
           ),
         ],
